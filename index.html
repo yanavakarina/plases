@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Места, куда хочется</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <p>Личный атлас природы</p>
+            <h1>Места, куда хочется</h1>
+            <p>Записывай места, которые хочется увидеть своими глазами.</p>
+        </header>
+
+        <section>
+            <h2>Добавить место</h2>
+            <form id="place-form">
+                <label for="place-name">Название места</label>
+                <input id="place-name" placeholder="Например, Таганай" required>
+                <label for="place-note">Почему хочется туда?</label>
+                <textarea id="place-note" rows="3"></textarea>
+                <button type="submit">Добавить в список</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Мой список</h2>
+            <p id="empty-list">Здесь появятся места, которые ты добавишь.</p>
+            <ul id="places"></ul>
+        </section>
+    </main>
+</body>
+</html>
